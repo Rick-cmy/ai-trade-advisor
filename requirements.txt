@@ -1,0 +1,6 @@
+streamlit
+duckdb
+openai
+python-dotenv
+requests
+sentence-transformers
