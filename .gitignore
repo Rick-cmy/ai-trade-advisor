@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+raw_data/
+db_workspace/
+*.duckdb
+*.duckdb.wal
+scripts/stress_result_*.csv
+.claude/
