@@ -13,6 +13,9 @@ st.set_page_config(
     layout="wide",
 )
 
+from core.theme import apply_theme
+apply_theme()
+
 st.title("🌐 GTSNA 全球贸易战略导航系统")
 st.caption("Global Trade Strategic Navigation Agent — MVP")
 

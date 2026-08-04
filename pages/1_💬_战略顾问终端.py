@@ -28,6 +28,9 @@ def _render_stance_badge(chunk: dict) -> str:
 
 st.set_page_config(page_title="战略顾问终端", page_icon="💬", layout="wide")
 
+from core.theme import apply_theme
+apply_theme()
+
 st.title("💬 交互式战略顾问终端")
 st.caption("适用对象: 国际谈判代表 · 部委行业分析员 · 企业高级战略官")
 
