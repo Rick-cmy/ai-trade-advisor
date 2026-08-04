@@ -2,6 +2,20 @@
 
 > **Code-only public mirror** of the MVP frontend (app + pages + core). The crawler, raw data, and DuckDB workspace are not included.
 
+## Screenshots
+
+**Strategic advisor terminal — a question kicks off a 4-step adversarial analysis** (vulnerability scan → evidence rebuttal → precedent matching → strategy generation):
+
+![Strategic advisor terminal](docs/screenshots/terminal-overview.jpg)
+
+**Step 3 — WTO precedent matching with applicability reasoning:**
+
+![WTO precedent matching](docs/screenshots/precedent-matching.jpg)
+
+**Step 4 — negotiation strategy, ready-to-publish talking points, and fallback options:**
+
+![Strategy output](docs/screenshots/strategy-output.jpg)
+
 An MVP Streamlit application for strategic trade analysis. It combines text
 embeddings, a DuckDB analytical store, web search (Serper), and an LLM
 (DeepSeek) to power a multi-turn strategic-advisory experience.
