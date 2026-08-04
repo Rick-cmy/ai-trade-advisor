@@ -89,6 +89,73 @@ table th, table td { border: 1px solid var(--line) !important; padding: 0.4rem 0
 }
 
 hr { border-color: var(--line); }
+
+/* ── 阅读版式：限制正文列宽，衬线大标题收敛 ─────────────── */
+.block-container { max-width: 980px; }
+h1 { font-size: 2.1rem !important; }
+
+/* ── 本期要点卡（结论前置）───────────────────────────── */
+.key-card {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--navy);
+  border-radius: 4px;
+  padding: 0.9rem 1.2rem 0.6rem;
+  margin: 0.4rem 0 1rem;
+  box-shadow: 0 1px 3px rgba(30, 58, 95, 0.06);
+}
+.key-card .key-title {
+  font-family: Georgia, "Songti SC", "Noto Serif SC", serif;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.3rem;
+}
+
+/* ── 待核实徽章 ──────────────────────────────────────── */
+.pending-badge {
+  display: inline-block;
+  font-size: 0.72em;
+  font-family: -apple-system, sans-serif;
+  color: #7A5A00;
+  background: #FBF3D9;
+  border: 1px solid #E0CE96;
+  border-radius: 3px;
+  padding: 0 0.45em;
+  margin: 0 0.15em;
+  vertical-align: 0.08em;
+  white-space: nowrap;
+}
+
+/* ── 用户消息「问题」眉标 ─────────────────────────────── */
+.q-eyebrow {
+  font-family: -apple-system, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  color: var(--burgundy);
+  margin-bottom: 0.15rem;
+}
+
+/* ── 欢迎卡 ─────────────────────────────────────────── */
+.welcome-card {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--navy);
+  border-radius: 4px;
+  padding: 1rem 1.3rem;
+  margin: 0.5rem 0 1rem;
+  line-height: 1.8;
+}
+.welcome-card b { color: var(--navy); }
+
+/* ── 下载/追问按钮弱化为次级操作 ───────────────────────── */
+.stDownloadButton button {
+  border: 1px solid var(--line);
+  color: var(--muted);
+  background: transparent;
+  border-radius: 3px;
+  font-size: 0.85rem;
+}
+.stDownloadButton button:hover { border-color: var(--navy); color: var(--navy); background: #FFFFFF; }
 </style>
 """
 

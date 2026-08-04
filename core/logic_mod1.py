@@ -322,6 +322,14 @@ SQL语句;
                 i += 2
                 continue
 
+            # SQL 守卫: 只读白名单 + 强制 LIMIT
+            if re.search(r'(ATTACH|INSTALL|LOAD|COPY|CREATE|INSERT|UPDATE|DELETE|DROP|ALTER|PRAGMA|EXPORT|IMPORT|CALL|SET)', sql, re.I):
+                print(f"[fact_tables] {table_name} SQL含禁用关键词,已跳过", flush=True)
+                i += 2
+                continue
+            if not re.search(r'LIMIT\s+\d+', sql, re.I):
+                sql += " LIMIT 15"
+
             try:
                 df = con.execute(sql).fetchdf()
                 if not df.empty:
